@@ -15,7 +15,7 @@
   - 关闭
 - shift + d
   - 开启骂爹
--  shift + r
+- shift + r
   - 开启彩虹屁
 - ctrl + v
   - 直接会将word复制到剪切板
