@@ -2,8 +2,8 @@ package main
 
 import (
     "fmt"
-    fast "git.9885.net/daima.mobi/lib/fasthttp-client"
     "github.com/atotto/clipboard"
+    fast "github.com/chuwt/fasthttp-client"
     "github.com/go-vgo/robotgo"
     hook "github.com/robotn/gohook"
     "log"
@@ -14,10 +14,10 @@ var (
     dirtyWords = "https://zuanbot.com/api.php"
 
     client = fast.NewClient().AddHeader("referer", "https://zuanbot.com/")
-    err error
-    resp *fast.Response
+    err    error
+    resp   *fast.Response
 
-    all = true
+    all             = true
     startRainbowPee = true
 )
 
@@ -47,7 +47,6 @@ func add() {
         fmt.Println("start rainbowPee success")
         startRainbowPee = true
     })
-
 
     robotgo.EventHook(hook.KeyDown, []string{"ctrl", "v"}, func(e hook.Event) {
         rainbowWords()
